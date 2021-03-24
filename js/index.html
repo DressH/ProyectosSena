@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="normalize.css">
+	<title>Slider</title>
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+	<script type="text/javascript" src="jquery-3.5.0.min.js"></script>
+	<script src="https://kit.fontawesome.com/8c3e990eb9.js" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js.js"></script>
+</head>
+
+<header><!-- cabecera de menú -->
+	<div class="icon"><!-- caja de menu hamburguesa -->
+		<i></i><!-- líneas de íconos de menú hamburguesa -->
+		<i></i>
+		<i></i>
+	</div>
+	<nav>
+		<ul class="primer"><!-- caja contenederora de menú -->
+			<div class="img"><!-- logo -->
+				<li><a href="#"><img src="../img/logo.png" width="57px;"></a></li><!--imagen  -->
+			</div>
+			<div class="menu"><!-- caja contenedora de niveles de menú -->
+				<li><a href="#">Inicio</a></li> <!-- se inicia el primer nivel este es el primer botón-->
+				<li><a href="#" class="menu2">Servicios</a><!-- segundo botón del primer nivel  -->
+					<ul class="segundo"><!-- se crea la clase segundo como contenedora del segundo nivel  -->
+						<li><a href="#">Informes </a></li><!-- se listan botones de segundo nivel  -->
+						<li><a href="#" class="menu3">Recursos </a><!-- se crea botón de segundo nivel y una clase contenedora del tercer nivel -->
+							<ul class="tercero"><!-- se crea la clase del nivel tercero contenedora -->
+								<li><a href="#">Asesoramiento</a></li><!-- se listan los botones del nivel tercero -->
+								<li><a href="#">Planes</a></li>
+								<li><a href="#">Estrategias</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Cotizaciones</a></li><!-- se crea el botón del nivel segundo -->
+					</ul>
+				</li>
+				<li><a href="#">Brand</a></li><!-- se crean los tres módulos faltantes del primer nivel -->
+				<li><a href="#">Portafolio</a></li>
+				<li><a href="#">Contáctenos</a></li>
+			</div>
+		</ul>
+	</nav><!-- se cierra etiqueta nav de menu -->
+</header><!-- se cierra el header -->
+
+	
+	
+		
+<section id="container-slider">
+	<a href="javascript: fntExecuteSlide('prev');" class="arrowPrev"><i class="fas fa-chevron-circle-left"></i></a>
+	<a href="javascript: fntExecuteSlide('next');" class="arrowNext"><i class="fas fa-chevron-circle-right"></i></a>
+	<ul class="listslider">
+		<li><a itlist="itlist_0" href="#" class="item-select-slid"></a></li>
+		<li><a itlist="itlist_1" href="#"></a></li>
+		<li><a itlist="itlist_2" href="#"></a></li>
+	</ul>
+	<ul id="slider">
+		<li style="background-image: url('https://cdn.pixabay.com/photo/2020/04/15/11/20/telework-5046230_1280.jpg'); z-index:0; opacity:1;">
+			<div class="content_slider">
+				<div>
+					<h2>Emprendimiento empresarial</h2>
+					<p>Descubra en qué consiste el empremdimiento empresarial por medio de 5 estrategias</p>
+					<a href="#" class="btnSlider">Ver más</a>
+				</div>
+			</div>
+		</li>
+		<li style="background-image: url('https://cdn.pixabay.com/photo/2018/02/20/10/28/business-3167295_960_720.jpg'); z-index:0; opacity:1;">
+			<div class="content_slider">
+				<div>
+					<h2>Negocios</h2>
+					<p>Recursos, guías, herramientas y consejos para emprender, crea tu empresa o inicia un negocio exitoso</p>
+					<a href="#" class="btnSlider">Ver más</a>
+				</div>
+			</div>
+		</li>
+		<li style="background-image: url('https://cdn.pixabay.com/photo/2015/07/17/22/42/typing-849806_960_720.jpg'); z-index:0; opacity:1;">
+			<div class="content_slider">
+				<div>
+					<h2>Estrategias de negocio</h2>
+					<p>Las estrategias de negocio representan planes o métodos</p>
+					<a href="#" class="btnSlider">Ver más</a>
+				</div>
+			</div>
+		</li>
+	</ul>
+</section>
+	<div class="container1" style="background-color: #a3ddcb; height: 300px; width: auto;"></div>
+	<div class="container2" style="background-color: #008891; height: 300px; width: auto;"></div>
+	<div class="container3" style="background-color: #a3ddcb; height: 300px; width: auto;"></div>
+	<div class="container4" style="background-color: #00587a; height: 300px; width: auto;"> </div>
+	<a href="https://api.whatsapp.com/send?phone=573112543851"><img src="../img/wa.png" width="55px;" class="ws"  alt="whatsapp"></a>
+	<button  id="button" title="Back to top">
+		<i class="fas fa-angle-up"></i> 
+	</button>
+
+	<script src="https://code.jquery.com/jquery-3.5.1.js" ></script>
+<script type="text/javascript" src="js.js"></script>
+<script type="text/javascript" src="script.js"></script>
+
+</body>
+</html> 
